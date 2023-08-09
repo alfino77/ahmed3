@@ -3,6 +3,9 @@
         <mat-card-title>{{title}}</mat-card-title>
         <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
     </mat-card-header>
+    <div class="app-actions">
+        <ng-content select=".mat-actions"></ng-content>
+    </div>
     <mat-card-content>
         <ng-content></ng-content>
     </mat-card-content>

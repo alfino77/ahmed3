@@ -15,6 +15,14 @@ import { CustomersComponent } from './pages/customers/customers.component';
 import {MatCardModule} from '@angular/material/card';
 import { CardComponent } from './mainLayout/card/card.component';
 import { EditCustomersComponent } from './pages/edit-customers/edit-customers.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { EmployeeComponent } from './pages/employee/employee.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
+import { EditEmployeeComponent } from './pages/edit-employee/edit-employee.component';
 
 
 @NgModule({
@@ -24,7 +32,10 @@ import { EditCustomersComponent } from './pages/edit-customers/edit-customers.co
     DashboardComponent,
     CustomersComponent,
     CardComponent,
-    EditCustomersComponent
+    EditCustomersComponent,
+    EmployeeComponent,
+    AddEmployeeComponent,
+    EditEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +46,12 @@ import { EditCustomersComponent } from './pages/edit-customers/edit-customers.co
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],

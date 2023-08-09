@@ -4,6 +4,9 @@ import { LayoutsComponent } from './mainLayout/layouts/layouts.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CustomersComponent } from './pages/customers/customers.component';
 import { EditCustomersComponent } from './pages/edit-customers/edit-customers.component';
+import { EmployeeComponent } from './pages/employee/employee.component';
+import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
+import { EditEmployeeComponent } from './pages/edit-employee/edit-employee.component';
 
 const routes: Routes = [
   {
@@ -20,6 +23,18 @@ const routes: Routes = [
     {
       path: "edit-customer",
       component:EditCustomersComponent
+    },
+    {
+      path: "employee",
+      component:EmployeeComponent
+    },
+    {
+      path: "add-employee",
+      component:AddEmployeeComponent
+    },
+    {
+      path: "edit-employee/:empID",
+      component:EditEmployeeComponent
     }
   
   ]
